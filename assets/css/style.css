@@ -2190,6 +2190,12 @@ main{
 .policy-block-text.margin{
     margin-bottom: 3rem;
 }
+.border-adv__mob{
+    display: none;
+}
+.mobile-tabs__border{
+    display: none;
+}
 .policy-list{
     list-style: outside;
     margin-bottom: 3rem;
@@ -3855,6 +3861,12 @@ main{
 }
 .catalog{
     z-index: 1;
+}
+.border-adv__mob{
+    display: block;
+}
+.mobile-tabs__border{
+    display: block;
 }
     
     
