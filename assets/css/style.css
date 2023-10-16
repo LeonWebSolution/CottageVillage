@@ -221,8 +221,8 @@ body.overflow{
     left: 0;
     right: 0;
     width: 100%;
-    height: 92rem;
-    z-index: 1;
+    height: 82.5rem;
+    z-index: 77;
 }
 .decor-banner{
     position: absolute;
@@ -1295,8 +1295,15 @@ main{
     position: absolute;
     top: -11rem;
     right: -13rem;
-    width: 120rem;
+    width: 110rem;
     height: 121.4rem;
+}
+.blur-green{
+    position: absolute;
+    top: -25rem;
+    left: -25rem;
+    width: 68.4rem;
+    height: 120rem;
 }
 .blur-contractor{
     position: absolute;
@@ -1810,7 +1817,8 @@ main{
     color: var(--black);
 }
 .faq {
-    height: 295rem;
+    height: auto;
+    padding-bottom: 15rem;
 }
 .faq-bg{
     top: -22rem;
@@ -1889,6 +1897,66 @@ main{
     right: 0;
     top: 9.3rem;
     height: 460rem;
+}
+.banner-1__item1{
+    position: absolute;
+    color: rgba(255, 255, 255, 0.17);
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 144.795%; /* 28.959px */
+    text-transform: uppercase;
+    z-index: 777;
+    left: 25rem;
+    top: 25rem;
+    transform: rotate(-44.738deg);
+}
+.banner-1__item1 p:nth-child(2){
+    margin-left: 10rem;
+}
+.banner-1__item2{
+    position: absolute;
+    color: rgba(255, 255, 255, 0.17);
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 144.795%; /* 28.959px */
+    text-transform: uppercase;
+    z-index: 777;
+    transform: rotate(-44.738deg);
+    top: 13rem;
+    right: 47rem;
+}
+.banner-1__item2 p:nth-child(2){
+    margin-left: 10rem;
+}
+.banner-1__item3{
+    position: absolute;
+    color: rgba(255, 255, 255, 0.17);
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 144.795%; /* 28.959px */
+    text-transform: uppercase;
+    z-index: 777;
+    transform: rotate(-44.738deg);
+    bottom: 7rem;
+    left: 33rem;
+}
+.banner-1__item3 p:nth-child(2){
+    margin-left: 5rem;
+}
+.banner-1__item4{
+    position: absolute;
+    color: rgba(0, 0, 0, 0.24);
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 144.795%; /* 28.959px */
+    text-transform: uppercase;
+    z-index: 777;
+    transform: rotate(-44.738deg);
+    bottom: 15rem;
+    right: 37rem;
+}
+.banner-1__item4 p:nth-child(2){
+    margin-left: 7rem;
 }
 .catalog{
     padding-top: 16.3rem;
@@ -2285,11 +2353,25 @@ main{
 }
 
 
-
+.lap-br{
+    display: none;
+}
 
 /* End footer */
 
 /* Start adaptive */
+
+@media (max-width: 1440px){
+   .lap-br{
+    display: block;
+   }
+   .br-span{
+    margin-left: 15rem;
+   }
+   .l-title{
+    margin-left: -10rem;
+   }
+}
 
 @media (max-width: 1000px) {
     html{
@@ -3219,6 +3301,15 @@ main{
     .contractor-text{
         font-size: 1.5rem;
     }
+    .l-title{
+        margin-left: 0;
+    }
+    .l-title br{
+        display: none !important;
+    }
+    .br-span{
+        margin-left: 0;
+    }
     .contractor-text br{
         display: none;
     }
@@ -3428,6 +3519,46 @@ main{
         box-shadow: -5px 0px 0px 0px #FFB75E;
         padding: 2.4rem;
     }
+    .banner-1__item1{
+        font-size: 0.9rem;
+        transform: rotate(295deg);
+        left: 4rem;
+        top: 7rem;
+    }
+    .banner-1__item1 p:nth-child(2) {
+        margin-left: 3rem;
+    }
+    .banner-1__item2{
+        font-size: 0.9rem;
+        transform: rotate(295deg);
+        top: 5rem;
+        right: 6.5rem;
+    }
+    .banner-1__item2 p:nth-child(2) {
+        margin-left: 3rem;
+    }
+    .banner-1__item3{
+        font-size: 0.9rem;
+        transform: rotate(295deg);
+        left: 4rem;
+        bottom: 4rem;
+    }
+    .banner-1__item3 p:nth-child(2) {
+        margin-left: 2rem;
+    }
+    .banner-1__item4{
+        font-size: 0.9rem;
+        transform: rotate(295deg);
+        left: 4rem;
+        bottom: 4rem;
+        width: auto;
+        width: 25rem;
+        left: 23rem;
+        bottom: 11rem;
+    }
+    .banner-1__item4 p:nth-child(2) {
+        margin-left: 3rem;
+    }
     .info-main__bg{
         top: 0;
         position: absolute;
@@ -3580,7 +3711,8 @@ main{
         right: -30rem;
     }
     .faq {
-        height: 210rem;
+        height: auto;
+        padding-bottom: 8rem;
     }
     .main-street{
         height: 45.7rem;
