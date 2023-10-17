@@ -54,6 +54,18 @@ const primers = new Swiper('.swiper-primers', {
     }
 });
 
+const catalog = new Swiper('.catalog-slider', {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  speed: 1000,
+  navigation: {
+  nextEl: '.primer-next',
+  prevEl: '.primer-prev',
+  }
+});
+
+
+
 const primers2 = new Swiper('.swiper-primers2', {
     slidesPerView: 1,
     spaceBetween: 30,

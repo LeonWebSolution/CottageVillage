@@ -227,7 +227,7 @@ body.overflow{
 .decor-banner{
     position: absolute;
     top: -10.7rem;
-    left: 0;
+    left: 4.4rem;
     z-index: -1;
     width: 100%;
     /* box-shadow: 0px 0px 40px 13px rgba(0, 0, 0, 0.18); */
@@ -494,6 +494,35 @@ main{
   gap: 2rem;
   z-index: 77777;
 }
+.int-decor1{
+    position: absolute;
+    z-index: 77777;
+    top: 225rem;
+    left: -3rem;
+}
+.int-decor1 svg{
+    width: 16rem;
+    height: 31.3rem;
+}
+.int-decor2{
+    position: absolute;
+    z-index: 77777;
+    left: 50rem;
+}
+.int-decor2 svg{
+    width: 11.7rem;
+    height: 11.8rem;
+}
+.int-decor3{
+    position: absolute;
+    z-index: 77777;
+    top: 259rem;
+    left: 0;
+}
+.int-decor3 svg{
+    width: 9.1rem;
+    height: 11.7rem;
+}
 .one-wrap{
   background: #FFB75E;
   padding: 1.5rem 0;
@@ -545,7 +574,7 @@ main{
     padding-top: 16.8rem;
     position: relative;
     width: 100%;
-    height: 249rem;
+    height: 280rem;
 }
 .advantages .container{
     padding: 0 9.5rem;
@@ -641,11 +670,74 @@ main{
 }
 .how-dec{
     top: 0;
-    left: -5rem;
+    left: 0rem;
     position: absolute;
     width: 190.9rem;
     height: 35.6rem;
 }
+.banner-2__item1{
+    position: absolute;
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 179.4%; /* 43.056px */
+text-transform: uppercase;
+color: #fff;
+transform: rotate(-41.828deg);
+top: 65rem;
+left: 48rem;
+}
+.catalog-slider img{
+    width: 72.4rem;
+    height: 48.9rem;
+    object-fit: cover;
+    box-shadow: 0px 5px 0px 0px #FFB75E;
+    border-radius: 6px;
+}
+.catalog-wrapprt-slider{
+    width: 100%;
+}
+.catalogg-slider{
+    width: 100%;
+}
+.catalog-item .primers-slider{
+    width: 73rem;
+    height: 50.9rem;
+    margin-bottom: 3rem;
+}
+.banner-2__item2{
+    position: absolute;
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 179.4%; /* 43.056px */
+text-transform: uppercase;
+color: #fff;
+left: 83rem;
+bottom: 11rem;
+transform: rotate(-41.828deg);
+}
+.banner-2__item3{
+    position: absolute;
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 179.4%; /* 43.056px */
+text-transform: uppercase;
+color: #fff;
+transform: rotate(-41.828deg);
+top: 13rem;
+right: 13rem;
+}
+.banner-2__item4{
+    position: absolute;
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 179.4%; /* 43.056px */
+    text-transform: uppercase;
+    color: #fff;
+    right: 38rem;
+    bottom: 13rem;
+    transform: rotate(-41.828deg);
+}
+
 .how-bg{
     position: absolute;
     left: -1rem;
@@ -909,6 +1001,34 @@ main{
 }
 .mobile-blur{
     display: none;
+}
+.primer-house__decor1{
+    position: absolute;
+    left: -8rem;
+    top: 9.5rem;
+}
+.primer-house__decor1 svg{
+    width: 40.5rem;
+    height: 31.2rem;
+}
+
+.primer-house__decor2{
+    position: absolute;
+    left: 40rem;
+    top: 21rem;
+}
+.primer-house__decor2 svg{
+    width: 40.5rem;
+    height: 31.2rem;
+}
+.primer-house__decor3{
+    position: absolute;
+    left: 59rem;
+    top: 16rem;
+}
+.primer-house__decor3 svg{
+    width: 37.3rem;
+    height: 28.8rem;
 }
 .primers-slider{
     margin: auto;
@@ -1515,7 +1635,7 @@ main{
     right: 0;
     width: 100%;
     height: 23.2rem;
-    background: linear-gradient(180deg, #FFF 57.38%, rgba(255, 255, 255, 0.00) 153.32%);
+    background: linear-gradient(353deg, #FFF 57.38%, rgba(255, 255, 255, 0.00) 153.32%);
     filter: blur(15px);
 }
 .create-bg{
@@ -1524,7 +1644,6 @@ main{
     left: 0;
     right: 0;
     width: 100%;
-    z-index: 7777777777777777777777;
     height: 77.9rem;
 }
 .create-wrapper{
@@ -2225,6 +2344,12 @@ main{
     font-family: 'Days One';
 }
 
+.catalog-decor{
+    position: absolute;
+    top: 5rem;
+    left: 0;
+}
+
 
 /* End Street */
 
@@ -2732,7 +2857,7 @@ main{
     }
     .advantages{
         width: 100%;
-        height: 237rem;
+        height: 257rem;
         padding-top: 5rem;
     }
     .advantages-bg {
@@ -2997,6 +3122,15 @@ main{
      }
      .personal-slider {
         margin-top: 9.8rem;
+    }
+    .int-decor1{
+        display: none;
+    }
+    .int-decor2{
+        display: none;
+    }
+    .int-decor3{
+        display: none;
     }
     .personal-slider::before{
         width: 39rem;
@@ -3325,6 +3459,61 @@ main{
     .new-street{
         width: 100%;
         display: block;
+    }
+    .catalog-slider img{
+        width: 100%;
+        height: 23.8rem;
+        object-fit: cover;
+        box-shadow: 0px 5px 0px 0px #FFB75E;
+        border-radius: 6px;
+    }
+    .catalog-wrapprt-slider{
+        width: 100%;
+    }
+    .catalog-wrapper{
+        width: 100%;
+    }
+    .catalogg-slider{
+        width: 100%;
+    }
+    .banner-2__item1{
+        font-size: 1.2rem;
+        transform: rotate(-51.776deg);
+        top: 31rem;
+        left: 1rem;
+    }
+    .banner-2__item2{
+        font-size: 1.2rem;
+        transform: rotate(-50.351deg);
+        left: 27rem;
+        bottom: 5rem;
+    }
+    .banner-2__item3{
+        font-size: 1.2rem;
+        transform: rotate(-49.156deg);
+        top: 36rem;
+        right: 11rem;
+    }
+    .banner-2__item4{
+        font-size: 1.2rem;
+        transform: rotate(-50.351deg);
+        left: 7rem;
+        bottom: 11rem;
+        width: 30rem;
+    }
+    .primer-house__decor2{
+        display: none;
+    }
+    .catalog-item .primers-slider{
+        width: 36.8rem;
+        height: 23.8rem;
+        margin-bottom: 3rem;
+    }
+    .primer-house__decor3{
+        display: none;
+    }
+    .catalog-item .primers-slider .primer-navigations{
+        bottom: -3rem;
     }
     .new-street-img{
         top: 43rem;
@@ -4045,6 +4234,10 @@ main{
     .logo.footer .logo-img-text {
         font-size: 1.2rem;
     }
+    .catalog-decor{
+        display: none;
+    }
+
     .footer-left{
         text-align: center;
        width: 100%;
