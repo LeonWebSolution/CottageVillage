@@ -1477,6 +1477,9 @@ right: 13rem;
     margin-bottom: 4.2rem;
     position: relative; 
 }
+.swiper-navigation-pers{
+    bottom: 2rem;
+}
 .phrase-snoska::before{
    content: '';
    position: absolute;
