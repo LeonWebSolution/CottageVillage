@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Строительство коттеджей</title>
-    <link rel="icon" href="./assets/images/favicon/" type="image/x-icon">
-    <link rel="icon" href="./assets/images/favicon/" type="image/x-icon">
-    <link rel="icon" href="./assets/images/favicon/" type="image/png" sizes="16x16">
-    <link rel="icon" href="./assets/images/favicon/" type="image/png"sizes="32x32">
-    <link rel="icon" href="./assets/images/favicon/" type="image/png" sizes="180x180">
-    <link rel="icon" href="./assets/images/favicon/" type="image/png"sizes="192x192">
+    <link rel="icon" href="./assets/images/favicon/favicon-16.ico" type="image/x-icon">
+    <link rel="icon" href="./assets/images/favicon/favicon-32.ico" type="image/x-icon">
+    <link rel="icon" href="./assets/images/favicon/favicon-16.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="./assets/images/favicon/favicon-32.png" type="image/png"sizes="32x32">
+    <link rel="icon" href="./assets/images/favicon/favicon-180.png" type="image/png" sizes="180x180">
+    <link rel="icon" href="./assets/images/favicon/favicon-192.png" type="image/png"sizes="192x192">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Days+One&family=Inter:wght@600&family=Montserrat:wght@300;400;500;600;700&family=Mulish:wght@600;900&family=Oswald&display=swap" rel="stylesheet">
@@ -22,9 +22,8 @@
         <header class="header container">
             <div class="header-wrapper">
                 <a href="#" class="logo">
-                    <!-- <img src="" alt="" class="logo-img"> -->
-                    <h5 class="logo-img-text-big">Лого</h5>
-                    <h3 class="logo-img-text">Строительство коттеджей</h3>
+                    <img src="./assets/images/logo.png" alt="" class="logo-img">
+                    <h3 class="logo-img-text">Строительство <br><span> коттеджей</span></h3>
                 </a>
                 <nav class="nav">
                     <div class="nav-bg__block">
@@ -33,7 +32,7 @@
                     </div>
                     <div class="nav-wrapper">
                         <div class="nav-list">
-                            <a href="#" class="nav-link">Главная
+                            <a href="#" class="nav-link active">Главная
                                 <div class="border-svg">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="215" height="2" viewBox="0 0 215 2" fill="none">
                                         <path d="M0 1H215" stroke="url(#paint0_linear_1083_18052)"/>
@@ -418,7 +417,7 @@
                     </div>
                 </div>
             </section>
-              <section class="person">
+              <section class="person" id="person">
                 <picture>
                     <source media="(max-width: 1000px)" srcset="./assets/images/person-mob-bg.png">
                     <img src="./assets/images/person-bg.png" alt="" class="person-bg">
@@ -469,7 +468,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="personal-slider">
+                    <div class="personal-slider" id="terr">
                         <picture>
                             <source media="(max-width: 1000px)" srcset="./assets/images/pers-slider-mob.png">
                             <img src="./assets/images/personal-slider__bg.png" alt="" class="pers-slider__bg">
@@ -577,7 +576,7 @@
                         </svg>
                 </div>
                     <div class="container">
-                        <div class="primers-block__one">
+                        <div class="primers-block__one" id="primer">
                             <div class="primers-title">Примеры <br class="mob-br"> домов / планировки</div>
                             <div class="primers-slider">
                                 <div class="swiper swiper-primers">
@@ -792,10 +791,9 @@
         <footer class="footer">
             <div class="footer-wrapper container">
                 <div class="footer-left">
-                    <a href="#" class="logo footer">
-                        <!-- <img src="" alt="" class="logo-img"> -->
-                        <h5 class="logo-img-text-big">Лого</h5>
-                        <h3 class="logo-img-text">Строительство коттеджей</h3>
+                    <a href="#" class="logo">
+                        <img src="./assets/images/logo-footer.png" alt="" class="logo-img">
+                        <h3 class="logo-img-text  footer">Строительство <br><span> коттеджей</span></h3>
                     </a>
                     <button class="footer-btn">В каталог</button>
                 </div>
@@ -808,11 +806,11 @@
                     </div>
                     <div class="footer-list">
                         <div class="footer-list__title">Главное</div>
-                        <a href="" class="footer-link">Примеры домов / планировки</a>
-                        <a href="" class="footer-link">Персональное предложение</a>
+                        <a href="#primer" class="footer-link">Примеры домов / планировки</a>
+                        <a href="#person" class="footer-link">Персональное предложение</a>
                         <a href="" class="footer-link">Объекты для инвестиций</a>
-                        <a href="" class="footer-link">Территория посёлка</a>
-                        <a href="" class="footer-link">Наш подрядчик</a>
+                        <a href="#terr" class="footer-link">Территория посёлка</a>
+                        <a href="green-laynje.html#podr" class="footer-link">Наш подрядчик</a>
                     </div>
                 </div>
             </div>
