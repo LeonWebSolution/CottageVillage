@@ -2452,7 +2452,7 @@ right: 13rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 25rem;
+    height: 35rem;
 }
 .logo.footer{
     align-items: flex-start;
@@ -2515,6 +2515,46 @@ right: 13rem;
 .lap-br{
     display: none;
 }
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 77777777777777777;
+    justify-content: center;
+    align-items: center;
+}
+.faq-form__main{
+    position: relative;
+    z-index: 77777777;
+}
+
+.modal-content {
+    width: 100rem;
+    background-color: #fff;
+}
+
+.close {
+    position: absolute;
+    top: 15rem;
+    right: 40rem;
+    color: #fff;
+    float: right;
+    font-size: 7rem;
+    cursor: pointer;
+    cursor: pointer;
+    z-index: 7777777777777777;
+}
+.faq-polit{
+    position: relative;
+    z-index: 666666666666666666666;
+}
+
+
 
 /* End footer */
 
@@ -3909,6 +3949,8 @@ right: 13rem;
     }
     .social-title{
         font-size: 1.3rem;
+        text-align: center;
+        font-weight: 500;
     }
     .faq-socials{
         gap: 4.3rem;
@@ -4261,6 +4303,9 @@ right: 13rem;
     }
     .footer-left{
         height: 20rem;
+    }
+    .footer-left .footer-link{
+        margin-bottom: 2rem;
     }
     .footer-list__title{
         font-size: 1.6rem;

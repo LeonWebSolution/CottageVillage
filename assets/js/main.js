@@ -21,6 +21,26 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+const openModalButton = document.getElementById("openModal");
+const modal = document.getElementById("modal");
+const closeModalButton = document.getElementById("closeModal");
+
+if (openModalButton && modal && closeModalButton) {
+  openModalButton.addEventListener("click", () => {
+    modal.style.display = "flex";
+  });
+
+  closeModalButton.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  window.addEventListener("click", (event) => {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+}
+
 const swiper = new Swiper('.swiper-person', {
     slidesPerView: 'auto',
     spaceBetween: 30, 
@@ -41,6 +61,7 @@ const swiper = new Swiper('.swiper-person', {
         }
       }
 });
+
 
 
 const primers = new Swiper('.swiper-primers', {
@@ -78,20 +99,22 @@ const primers2 = new Swiper('.swiper-primers2', {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    const button = document.querySelector('.all-btn');
-    const slider = document.querySelector('.hidden-slider');
+  const button = document.querySelector('.all-btn');
+  const slider = document.querySelector('.hidden-slider');
 
-    button.addEventListener('click', function () {
-        if (slider.classList.contains('visible')) {
-            slider.classList.remove('visible');
-            slider.classList.add('hidden');
-            button.textContent = 'Посмотреть еще';
-        } else {
-            slider.classList.remove('hidden');
-            slider.classList.add('visible');
-            button.textContent = 'Скрыть';
-        }
-    });
+  if (button && slider) {
+      button.addEventListener('click', function () {
+          if (slider.classList.contains('visible')) {
+              slider.classList.remove('visible');
+              slider.classList.add('hidden');
+              button.textContent = 'Посмотреть еще';
+          } else {
+              slider.classList.remove('hidden');
+              slider.classList.add('visible');
+              button.textContent = 'Скрыть';
+          }
+      });
+  }
 });
 
 const accordionItems = document.querySelectorAll('.accordion-item');
@@ -150,28 +173,25 @@ tabButtons.forEach((button) => {
 const button = document.querySelector('.all-plans');
 const hiddenElements = document.querySelectorAll('.noneh');
 
-// Создаем переменную, чтобы отслеживать состояние
-let isHidden = true;
+if (button && hiddenElements.length > 0) {
+  let isHidden = true;
 
-// Добавляем обработчик события для кнопки
-button.addEventListener('click', () => {
-  if (isHidden) {
-    // Если элементы скрыты, показываем их
-    hiddenElements.forEach((element) => {
-      element.style.display = 'block';
-    });
-    button.textContent = 'Скрыть';
-  } else {
-    // Если элементы видимы, скрываем их
-    hiddenElements.forEach((element) => {
-      element.style.display = 'none';
-    });
-    button.textContent = 'Показать еще';
-  }
+  button.addEventListener('click', () => {
+    if (isHidden) {
+      hiddenElements.forEach((element) => {
+        element.style.display = 'block';
+      });
+      button.textContent = 'Скрыть';
+    } else {
+      hiddenElements.forEach((element) => {
+        element.style.display = 'none';
+      });
+      button.textContent = 'Показать еще';
+    }
 
-  // Инвертируем состояние
-  isHidden = !isHidden;
-});;
+    isHidden = !isHidden;
+  });
+}
 
 
 
